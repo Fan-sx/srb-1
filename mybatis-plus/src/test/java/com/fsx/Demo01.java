@@ -8,13 +8,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 
 @SpringBootTest
-public class Demo01 {
+ class Demo01 {
 
     @Autowired
     UserMapper userMapper;
 
     @Test
-    public void test(){
+     void test(){
+        // 第二次提交更改
         System.out.println(userMapper.selectList(null));
     }
 }
